@@ -1,0 +1,2686 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta charset="utf-8">
+   <meta content="@cvedetails" name="twitter:site"/>
+   <meta content="summary" name="twitter:card"/>
+   <title>
+    Security vulnerabilities, CVEs,  published in December 2021
+   </title>
+   <meta content="Security vulnerabilities, CVEs,  published in December 2021" property="og:title"/>
+   <meta content="Security vulnerabilities, CVEs,  published in December 2021" name="twitter:title"/>
+   <meta content="Security vulnerabilities, CVEs  published in December 2021" name="description"/>
+   <meta content="Security vulnerabilities, CVEs  published in December 2021" property="og:description"/>
+   <meta content="Security vulnerabilities, CVEs  published in December 2021" name="twitter:description"/>
+   <meta content="security, cve, nvd, security vulnerability, vulnerability, exploit, cvss, cwe, information security, vulnerability database, open source vulnerabilities, attack surface, vulnerability intelligence, vuln intel, vulnerability intel, zero day, vulnerabilities in CISA KEV" name="keywords"/>
+   <link href="https://www.cvedetails.com/vulnerability-list/year-2021/month-12/December.html?page=2&amp;order=1" rel="canonical"/>
+   <meta content="https://www.cvedetails.com/vulnerability-list/year-2021/month-12/December.html?page=2&amp;order=1" property="og:url"/>
+   <script crossorigin="anonymous" integrity="sha512-EmNxF3E6bM0Xg1zvmkeYD3HDBeGxtsG92IxFt1myNZhXdCav9MzvuH/zNMBU1DmIPN6njrhX1VTbqdJxQ2wHDg==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js">
+   </script>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" referrerpolicy="no-referrer" rel="stylesheet"/>
+   <script crossorigin="anonymous" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+   </script>
+   <script crossorigin="anonymous" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js">
+   </script>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+   <link href="/css/cvedetails.css?v=2" rel="stylesheet" type="text/css"/>
+   <link href="/css/ssc-ds.css?v=2" rel="stylesheet" type="text/css"/>
+   <link href="/css/print.css?v=2" media="print" rel="stylesheet" type="text/css"/>
+   <link href="https://fonts.googleapis.com" rel="preconnect"/>
+   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" referrerpolicy="no-referrer" rel="stylesheet"/>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" referrerpolicy="no-referrer" rel="stylesheet"/>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w==" referrerpolicy="no-referrer" rel="stylesheet"/>
+   <script src="/cvedetails.js?v=20240918" type="text/javascript">
+   </script>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-sm ssc-topbar-bg border-bottom m-0 px-0 pt-0 pt-sm-1 pb-0 pb-md-1 pb-lg-0" id="topnavbar">
+   <div class="container-xxl">
+    <div class="row w-100 m-0 pt-1" id="cvedTopNavbarCont">
+     <div class="col-md-3 d-none d-md-block text-start">
+      <a class="nav-link pt-2 px-2 text-white" href="/documentation/" title="User guide and product documentation">
+       Documentation
+      </a>
+     </div>
+     <div class="col-md-8 d-flex justify-content-center pb-lg-1" style="min-height:37px;">
+      <div class="flex-fill mb-1">
+       <style>
+        .ui-autocomplete-loading {
+		background: white url("/img/ui-anim_basic_16x16.gif") right center no-repeat;
+	}
+	.ui-menu-item{
+		border-top:1px solid #ddd;
+		padding-left:5px;
+		text-overflow:ellipsis;
+		padding-top:0.3em;
+		padding-bottom:0.3em;
+
+	}
+	.ui-autocomplete-category {
+		font-weight: bold;
+		padding: .2em .4em;
+		margin: .8em 0 .2em;
+	}
+       </style>
+       <script defer="">
+        $(function () {
+				$.widget( "custom.catcomplete", $.ui.autocomplete, {
+			_create: function() {
+				this._super();
+				this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+			},
+			_renderMenu: function( ul, items ) {
+				var that = this,
+				currentCategory = "";
+				$.each( items, function( index, item ) {
+					if ( item.category != currentCategory ) {
+						ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+						currentCategory = item.category;
+					}
+					that._renderItemData( ul, item );
+				});
+				}
+		});
+		
+		$("#unifiedsearchinput").catcomplete({	
+			delay: 500,
+			minLength: 2,		//min search string length
+			
+			focus: function (event, ui) {	//what to do when an item in the autocomplete list is focused
+				$("#unifiedsearchinput").val(ui.item.value);
+				return false;
+			},
+			
+			source: function (request, response) {	//loads the autocomplete data
+				var requestdata = {'q': request.term};
+				$.getJSON("/vulnerability-search-autocomplete.php", requestdata,
+						function (data, status, xhr) {
+							if(!data || data.length<1){
+								data=[{'label':'No results found. Please try a different search', 'value':'', 'category':'Not found'}];
+							}
+							response(data);
+						}
+				);
+			},
+
+			select: function (event, ui) {		//what to do when an item is selected				 				
+				$('#unifiedsearchinput').val(ui.item.value);	
+				var nextUrl = onvulnautocompletesearchformsubmit(ui.item);
+				if(nextUrl){
+					window.location.href=nextUrl;
+				}
+			}
+		})				
+	});
+		function onvulnautocompletesearchformsubmit(selecteditem) {
+		var searchString = document.forms['vulnautocompletesearchform'].q.value.trim();
+		if(!searchString){
+			return false;
+		}
+		var cveregex = /^CVE-([0-9]{4})-([0-9]{4,15})$/gi;
+		
+		if (cveregex.exec(searchString)) {
+			//this is a CVE id, go to CVE pageb
+			return '/cve/' + encodeURIComponent(searchString.trim().toUpperCase())+'/';
+		}
+		
+		var searchStringLower = searchString.toLowerCase();
+		
+		var nextUrl = unifiedsearchgotoitem(selecteditem, searchStringLower);
+		if(nextUrl){			
+			return nextUrl;
+		}
+		
+		return false;
+	}
+	
+		function unifiedsearchgotoitem(tmpItem, searchStringLower){		
+		var tmpItemLabelLowercase = tmpItem.value.toLowerCase();
+		var targeturl = null;
+		
+		if(tmpItemLabelLowercase == searchStringLower){
+			switch(tmpItem.category){
+				case 'Vendors':
+					targeturl='/vendor/'+encodeURIComponent(tmpItem.id.trim())+'/';
+					break;
+				case 'Products':					
+					targeturl='/version-list/0/'+encodeURIComponent(tmpItem.id.trim())+'/1/';
+					break;
+				case 'Vulnerability Types':
+					targeturl='/vulnerability-list/' + encodeURIComponent(tmpItem.id.trim())+'-1/vulnerabilities.html';
+					break;
+				case 'CVEs':
+					targeturl = '/cve/' + encodeURIComponent(tmpItem.id.trim())  + '/';
+					break;
+			}				
+			
+			return targeturl;
+		}
+		return false;
+	}
+       </script>
+       <form action="" class="form w-100" id="vulnautocompletesearchform" method="get" name="vulnautocompletesearchform" onsubmit="return false;">
+        <div class="w-100" id="unifiedsearchbox">
+         <div class="input-group">
+          <span class="input-group-text bg-white" id="unified-search-icon">
+           <i class="fas fa-search">
+           </i>
+          </span>
+          <input aria-describedby="unified-search-icon" aria-label="Search" autocomplete="off" class="form-control border-start-0" id="unifiedsearchinput" name="q" placeholder="CVE id, product, vendor..."/>
+          <!--input class="btn btn-primary" type="button" value="Search"-->
+         </div>
+        </div>
+       </form>
+      </div>
+     </div>
+    </div>
+    <div class="d-flex justify-content-end">
+     <button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler text-white border-white me-2" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+     <div class="col-md-2 d-inline-block d-md-none me-2">
+      <a class="nav-link pt-1 px-2 text-white" href="/documentation/" title="User guide and product documentation">
+       Documentation
+      </a>
+     </div>
+     <ul class="m-0 p-0" style="list-style-type: none; ">
+      <li class="px-2 pt-1 text-nowrap">
+       <a class="nav-item nav-link text-white" href="/sign-in" title="Login">
+        Log in
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="container-xxl p-0 d-flex flex-column justify-content-start">
+   <div class="container-xxl p-0 d-flex justify-content-start">
+    <div class="ssc-menu-wrapper">
+     <nav class="navbar navbar-expand-sm">
+      <div class="ssc-menu collapse navbar-collapse" id="mainMenu">
+       <div class="ssc-menu-section ssc-menu-logo">
+        <a class="color-brand-500" href="/" title="Go to cvedetails.com homepage">
+         <img border="0" height="18px" src="/img/ssc-logo.svg" title="SecurityScorecard" width="18px"/>
+         <span class="ssc-menu-logo-text">
+          CVEdetails.com
+         </span>
+        </a>
+        <div class="w-100">
+         <a class="ssc-text-secondary" href="https://securityscorecard.com?utm_source=cvedetails" rel="noopener" style="font-size:12px" target="_blank">
+          powered by SecurityScorecard
+         </a>
+        </div>
+       </div>
+       <div class="ssc-menu-section">
+        <div class="ssc-menu-section-title">
+         <button aria-expanded="true" class="btn d-inline-flex align-items-center rounded border-0" data-bs-target="#menu-vulns" data-bs-toggle="collapse">
+          Vulnerabilities
+         </button>
+        </div>
+        <div class="collapse show w-100" id="menu-vulns">
+         <a class="ssc-menu-item" href="/browse-by-date.php" title="Browse security vulnerabilities by date">
+          <i class="fas fa-calendar-alt">
+          </i>
+          <span>
+           By Date
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/vulnerabilities-by-types.php" title="Vulnerability distribution by type">
+          <i class="fas fa-layer-group">
+          </i>
+          <span>
+           By Type
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/cisa-known-exploited-vulnerabilities/kev-1.html" title="Vulnerabilities in the CISA Known Exploited Vulnerabilities (KEV) catalog">
+          <i class="fas fa-bomb">
+          </i>
+          <span>
+           Known Exploited
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/cve-assigners-cnas/1.html" title="CVE sources, assigners">
+          <i class="fas fa-user-plus">
+          </i>
+          <span>
+           Assigners
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/cvss-score-charts.php" title="CVSS score distribution report">
+          <i class="fas fa-chart-bar">
+          </i>
+          <span>
+           CVSS Scores
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/epss/epss-score-history.html?delta=110" title="EPSS score change history">
+          <i class="fas fa-chart-line">
+          </i>
+          <span>
+           EPSS Scores
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/vulnerability-search.php" title="Vulnerability search">
+          <i class="fas fa-search">
+          </i>
+          <span>
+           Search
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="ssc-menu-section">
+        <div class="ssc-menu-section-title">
+         <button aria-expanded="true" class="btn d-inline-flex align-items-center rounded border-0" data-bs-target="#menu-vuln-softw" data-bs-toggle="collapse">
+          Vulnerable Software
+         </button>
+        </div>
+        <div class="collapse show w-100" id="menu-vuln-softw">
+         <a class="ssc-menu-item" href="/vendor.php" title="Browse software and hardware vendors">
+          <i class="fas fa-briefcase">
+          </i>
+          <span>
+           Vendors
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/product-list.php" title="Browse software and hardware products">
+          <i class="fas fa-cube">
+          </i>
+          <span>
+           Products
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/version-search.php" title="Search for product versions">
+          <i class="fas fa-search-plus">
+          </i>
+          <span>
+           Version Search
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="ssc-menu-section">
+        <div class="ssc-menu-section-title">
+         <button aria-expanded="true" class="btn d-inline-flex align-items-center rounded border-0" data-bs-target="#menu-vuln-intel" data-bs-toggle="collapse">
+          Vulnerability Intel.
+         </button>
+        </div>
+        <div class="collapse show w-100" id="menu-vuln-intel">
+         <a class="ssc-menu-item" href="/data/list" title="Newsfeed, things you need to know, most recent first">
+          <i class="fas fa-newspaper">
+          </i>
+          <span>
+           Newsfeed
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/osv/ecosystem/list" title="Vulnerabilities in open source projects and ecosystems">
+          <i class="fas fa-database">
+          </i>
+          <span>
+           Open Source Vulns
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/data/emerging-CVEs" title="CVEs discovered in other sources but not yet published">
+          <i class="fas fa-level-up-alt">
+          </i>
+          <span>
+           Emerging CVEs
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/feed-aggregator/feed-list" title="RSS feed aggregator">
+          <i class="fas fa-rss-square">
+          </i>
+          <span>
+           Feeds
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/exploit/list" title="Exploits from exploit-db, packetstorm and metasploit">
+          <i class="fas fa-crosshairs">
+          </i>
+          <span>
+           Exploits
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/advisory/list" title="Security advisories from vendors and other sources like github">
+          <i class="fas fa-ambulance">
+          </i>
+          <span>
+           Advisories
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/code/repositories" title="Monitored open source repositories">
+          <i class="fas fa-code">
+          </i>
+          <span>
+           Code Repositories
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/code/changes" title="Source code changes related to security issues and CVEs">
+          <i class="fas fa-keyboard">
+          </i>
+          <span>
+           Code Changes
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="ssc-menu-section">
+        <div class="ssc-menu-section-title">
+         <button aria-expanded="true" class="btn d-inline-flex align-items-center rounded border-0" data-bs-target="#menu-attack-surface" data-bs-toggle="collapse">
+          Attack Surface
+         </button>
+        </div>
+        <div class="collapse show w-100" id="menu-attack-surface">
+         <a class="ssc-menu-item" href="/asi/my-attack-surface" title="External attack surface summary for my organization">
+          <i class="fas fa-network-wired">
+          </i>
+          <span>
+           My Attack Surface
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/asi/my-digital-footprint" title="Digital footprint of my organization">
+          <i class="fas fa-shoe-prints">
+          </i>
+          <span>
+           Digital Footprint
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/asi/discovered-products" title="Products discovered on my attack surface by scanners">
+          <i class="fas fa-cube">
+          </i>
+          <span>
+           Discovered Products
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/asi/detected-vulns" title="Vulnerabilities detected on my attack surface by scanners">
+          <i class="fas fa-binoculars">
+          </i>
+          <span>
+           Detected Vulns
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/asi/ip-details" title="Search for an IP address">
+          <i class="fas fa-search-location">
+          </i>
+          <span>
+           IP Search
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="ssc-menu-section">
+        <div class="ssc-menu-section-title">
+         <button aria-expanded="true" class="btn d-inline-flex align-items-center rounded border-0" data-bs-target="#menu-other" data-bs-toggle="collapse">
+          Other
+         </button>
+        </div>
+        <div class="collapse show w-100" id="menu-other">
+         <a class="ssc-menu-item" href="/metasploit-modules/1.html" title="Metasploit modules and related CVEs">
+          <i class="fas fa-radiation">
+          </i>
+          <span>
+           Metasploit Modules
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/cwe-definitions/" title="CWE definitions">
+          <i class="fas fa-book">
+          </i>
+          <span>
+           CWE Definitions
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="/capec-definitions/" title="CAPEC definitions">
+          <i class="fas fa-book-dead">
+          </i>
+          <span>
+           CAPEC Definitions
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="https://securityscorecard.com/research/?utm_source=cvedetails" target="_blank" title="Featured research articles from SecurityScorecard">
+          <i class="fas fa-newspaper">
+          </i>
+          <span>
+           Articles
+          </span>
+         </a>
+         <a class="ssc-menu-item" href="https://securityscorecard.com/blog/?utm_source=cvedetails" target="_blank" title="SecurityScorecard blog">
+          <i class="fas fa-blog">
+          </i>
+          <span>
+           Blog
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="mt-4">
+       </div>
+      </div>
+     </nav>
+    </div>
+    <div class="flex-fill" id="contentdiv" style="min-width:0;">
+     <div class="p-0 pe-2">
+      <main>
+       <div class="page-header">
+        <h1>
+         Security Vulnerabilities, CVEs  Published In December 2021
+        </h1>
+       </div>
+       <div class="submenu">
+        <nav class="navbar navbar-expand-lg d-inline-block">
+         <div class="container-fluid p-0">
+          <button aria-controls="navbarFilterOptions" aria-expanded="false" aria-label="Toggle year, month filter" class="navbar-toggler" data-bs-target="#navbarFilterOptions" data-bs-toggle="collapse" type="button">
+           <i class="fas fa-bars">
+           </i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarFilterOptions">
+           <div class="navbar-nav d-block">
+            Published in:
+            <div class="dropdown d-none d-lg-inline-block">
+             <button aria-controls="vulnListYearMonthOptions" aria-expanded="false" aria-label="Toggle year-month filtering options" class="btn btn-sm btn-white ms-2 dropdown-toggle" data-bs-target="#vulnListYearMonthOptions" data-bs-toggle="collapse" type="button">
+              <i class="fas fa-bars">
+              </i>
+             </button>
+             <ul class="dropdown-menu" id="vulnListYearMonthOptions">
+              <li class="dropdown-item">
+               <div class="d-inline-block">
+                <a class="me-1" href="/vulnerability-list/year-2025/vulnerabilities.html?page=1&amp;order=1" title="Vulnerabilities published in 2025">
+                 2025
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2025/month-1/January.html?page=1&amp;order=1" title="Vulnerabilities published in January 2025">
+                 January
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2025/month-2/February.html?page=1&amp;order=1" title="Vulnerabilities published in February 2025">
+                 February
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2025/month-3/March.html?page=1&amp;order=1" title="Vulnerabilities published in March 2025">
+                 March
+                </a>
+               </div>
+              </li>
+              <li class="dropdown-item">
+               <div class="d-inline-block">
+                <a class="me-1" href="/vulnerability-list/year-2024/vulnerabilities.html?page=1&amp;order=1" title="Vulnerabilities published in 2024">
+                 2024
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-1/January.html?page=1&amp;order=1" title="Vulnerabilities published in January 2024">
+                 January
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-2/February.html?page=1&amp;order=1" title="Vulnerabilities published in February 2024">
+                 February
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-3/March.html?page=1&amp;order=1" title="Vulnerabilities published in March 2024">
+                 March
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-4/April.html?page=1&amp;order=1" title="Vulnerabilities published in April 2024">
+                 April
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-5/May.html?page=1&amp;order=1" title="Vulnerabilities published in May 2024">
+                 May
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-6/June.html?page=1&amp;order=1" title="Vulnerabilities published in June 2024">
+                 June
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-7/July.html?page=1&amp;order=1" title="Vulnerabilities published in July 2024">
+                 July
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-8/August.html?page=1&amp;order=1" title="Vulnerabilities published in August 2024">
+                 August
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-9/September.html?page=1&amp;order=1" title="Vulnerabilities published in September 2024">
+                 September
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-10/October.html?page=1&amp;order=1" title="Vulnerabilities published in October 2024">
+                 October
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-11/November.html?page=1&amp;order=1" title="Vulnerabilities published in November 2024">
+                 November
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2024/month-12/December.html?page=1&amp;order=1" title="Vulnerabilities published in December 2024">
+                 December
+                </a>
+               </div>
+              </li>
+              <li class="dropdown-item">
+               <div class="d-inline-block">
+                <a class="me-1" href="/vulnerability-list/year-2023/vulnerabilities.html?page=1&amp;order=1" title="Vulnerabilities published in 2023">
+                 2023
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-1/January.html?page=1&amp;order=1" title="Vulnerabilities published in January 2023">
+                 January
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-2/February.html?page=1&amp;order=1" title="Vulnerabilities published in February 2023">
+                 February
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-3/March.html?page=1&amp;order=1" title="Vulnerabilities published in March 2023">
+                 March
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-4/April.html?page=1&amp;order=1" title="Vulnerabilities published in April 2023">
+                 April
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-5/May.html?page=1&amp;order=1" title="Vulnerabilities published in May 2023">
+                 May
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-6/June.html?page=1&amp;order=1" title="Vulnerabilities published in June 2023">
+                 June
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-7/July.html?page=1&amp;order=1" title="Vulnerabilities published in July 2023">
+                 July
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-8/August.html?page=1&amp;order=1" title="Vulnerabilities published in August 2023">
+                 August
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-9/September.html?page=1&amp;order=1" title="Vulnerabilities published in September 2023">
+                 September
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-10/October.html?page=1&amp;order=1" title="Vulnerabilities published in October 2023">
+                 October
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-11/November.html?page=1&amp;order=1" title="Vulnerabilities published in November 2023">
+                 November
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2023/month-12/December.html?page=1&amp;order=1" title="Vulnerabilities published in December 2023">
+                 December
+                </a>
+               </div>
+              </li>
+              <li class="dropdown-item">
+               <div class="d-inline-block">
+                <a class="me-1" href="/vulnerability-list/year-2022/vulnerabilities.html?page=1&amp;order=1" title="Vulnerabilities published in 2022">
+                 2022
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-1/January.html?page=1&amp;order=1" title="Vulnerabilities published in January 2022">
+                 January
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-2/February.html?page=1&amp;order=1" title="Vulnerabilities published in February 2022">
+                 February
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-3/March.html?page=1&amp;order=1" title="Vulnerabilities published in March 2022">
+                 March
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-4/April.html?page=1&amp;order=1" title="Vulnerabilities published in April 2022">
+                 April
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-5/May.html?page=1&amp;order=1" title="Vulnerabilities published in May 2022">
+                 May
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-6/June.html?page=1&amp;order=1" title="Vulnerabilities published in June 2022">
+                 June
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-7/July.html?page=1&amp;order=1" title="Vulnerabilities published in July 2022">
+                 July
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-8/August.html?page=1&amp;order=1" title="Vulnerabilities published in August 2022">
+                 August
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-9/September.html?page=1&amp;order=1" title="Vulnerabilities published in September 2022">
+                 September
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-10/October.html?page=1&amp;order=1" title="Vulnerabilities published in October 2022">
+                 October
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-11/November.html?page=1&amp;order=1" title="Vulnerabilities published in November 2022">
+                 November
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2022/month-12/December.html?page=1&amp;order=1" title="Vulnerabilities published in December 2022">
+                 December
+                </a>
+               </div>
+              </li>
+              <li class="dropdown-item">
+               <div class="d-inline-block">
+                <a class="me-1" href="/vulnerability-list/year-2021/vulnerabilities.html?page=1&amp;order=1" title="Vulnerabilities published in 2021">
+                 2021
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-1/January.html?page=1&amp;order=1" title="Vulnerabilities published in January 2021">
+                 January
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-2/February.html?page=1&amp;order=1" title="Vulnerabilities published in February 2021">
+                 February
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-3/March.html?page=1&amp;order=1" title="Vulnerabilities published in March 2021">
+                 March
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-4/April.html?page=1&amp;order=1" title="Vulnerabilities published in April 2021">
+                 April
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-5/May.html?page=1&amp;order=1" title="Vulnerabilities published in May 2021">
+                 May
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-6/June.html?page=1&amp;order=1" title="Vulnerabilities published in June 2021">
+                 June
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-7/July.html?page=1&amp;order=1" title="Vulnerabilities published in July 2021">
+                 July
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-8/August.html?page=1&amp;order=1" title="Vulnerabilities published in August 2021">
+                 August
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-9/September.html?page=1&amp;order=1" title="Vulnerabilities published in September 2021">
+                 September
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-10/October.html?page=1&amp;order=1" title="Vulnerabilities published in October 2021">
+                 October
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-11/November.html?page=1&amp;order=1" title="Vulnerabilities published in November 2021">
+                 November
+                </a>
+                <a class="me-1" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=1" title="Vulnerabilities published in December 2021">
+                 December
+                </a>
+               </div>
+              </li>
+             </ul>
+            </div>
+            <div class="d-inline-block">
+             <a class="me-1" href="/vulnerability-list/year-2021/vulnerabilities.html?page=1&amp;order=1" title="Vulnerabilities published in 2021">
+              2021
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-1/January.html?page=1&amp;order=1" title="Vulnerabilities published in January 2021">
+              January
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-2/February.html?page=1&amp;order=1" title="Vulnerabilities published in February 2021">
+              February
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-3/March.html?page=1&amp;order=1" title="Vulnerabilities published in March 2021">
+              March
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-4/April.html?page=1&amp;order=1" title="Vulnerabilities published in April 2021">
+              April
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-5/May.html?page=1&amp;order=1" title="Vulnerabilities published in May 2021">
+              May
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-6/June.html?page=1&amp;order=1" title="Vulnerabilities published in June 2021">
+              June
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-7/July.html?page=1&amp;order=1" title="Vulnerabilities published in July 2021">
+              July
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-8/August.html?page=1&amp;order=1" title="Vulnerabilities published in August 2021">
+              August
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-9/September.html?page=1&amp;order=1" title="Vulnerabilities published in September 2021">
+              September
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-10/October.html?page=1&amp;order=1" title="Vulnerabilities published in October 2021">
+              October
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-11/November.html?page=1&amp;order=1" title="Vulnerabilities published in November 2021">
+              November
+             </a>
+             <a class="me-1" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=1" title="Vulnerabilities published in December 2021">
+              December
+             </a>
+            </div>
+            <div class="row">
+             <div class="col">
+              <div class="d-inline-block me-4">
+               CVSS Scores Greater Than:
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=0&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 0">
+                0
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=1&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 1">
+                1
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=2&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 2">
+                2
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=3&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 3">
+                3
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=4&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 4">
+                4
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=5&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 5">
+                5
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=6&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 6">
+                6
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=7&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 7">
+                7
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=8&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 8">
+                8
+               </a>
+               <a href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=9&amp;order=1" title="Show only vulnerabilities with a cvss score greater than 9">
+                9
+               </a>
+              </div>
+              <a class="me-1" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;cvssscoremin=0&amp;cvssscoremax=0&amp;order=1&amp;isInCISAKEV=1" title="Show vulnerabilities in CISA KEV Catalog">
+               In CISA KEV Catalog
+              </a>
+             </div>
+            </div>
+            <div style="clear:both;">
+             Sort Results By :
+             <a class="d-inline-block" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=7" rel="nofollow" title="Order by publish date in descending order">
+              Publish Date
+              <i class="fas fa-sort-numeric-down">
+              </i>
+             </a>
+             <a class="d-inline-block" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=8" rel="nofollow" title="Order by update date in descending order">
+              Update Date
+              <i class="fas fa-sort-numeric-down">
+              </i>
+             </a>
+             <div class="d-inline-block">
+              CVE Number
+              <i class="fas fa-sort-numeric-down">
+              </i>
+             </div>
+             <a class="d-inline-block" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=2" rel="nofollow" title="Order by CVE number in ascending order">
+              CVE Number
+              <i class="fas fa-sort-numeric-up">
+              </i>
+             </a>
+             <a class="d-inline-block" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=3" rel="nofollow" title="Order by CVSS score in descending order">
+              CVSS Score
+              <i class="fas fa-sort-numeric-down">
+              </i>
+             </a>
+             <a class="d-inline-block" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=5" rel="nofollow" title="Order by EPSS score descending order">
+              EPSS Score
+              <i class="fas fa-sort-numeric-down">
+              </i>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+       <div class="row px-2" id="resultsTableVueDiv">
+        <div class="col-auto flex-fill paging" id="pagingt" style="">
+        </div>
+        <div class="col-auto text-end d-flex flex-row align-items-end justify-content-end pb-2">
+         <a class="text-center me-4" href="javascript:copyResultsAsTSV()" title="Copy results in tab seperated values format">
+          <i class="fas fa-copy">
+          </i>
+          Copy
+         </a>
+        </div>
+        <div class="bg-white py-2 px-0" id="searchresults">
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45715/" onclick="highlightOnClick(this)" title="CVE-2021-45715 security vulnerability details">
+               CVE-2021-45715
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+              <div class="col-md-4 small">
+              </div>
+              <div class="col-md-4 small">
+               <div data-tsvfield="exploitExistsPotential" title="Potential exploit exists">
+                <i class="fas fa-biohazard exploitexists text-danger-emphasis fs-6">
+                </i>
+                Potential exploit
+               </div>
+              </div>
+              <div class="col-md-4 small">
+              </div>
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the rusqlite crate 0.25.x before 0.25.4 and 0.26.x before 0.26.2 for Rust. create_window_function has a use-after-free.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.27%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-26
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45714/" onclick="highlightOnClick(this)" title="CVE-2021-45714 security vulnerability details">
+               CVE-2021-45714
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+              <div class="col-md-4 small">
+              </div>
+              <div class="col-md-4 small">
+               <div data-tsvfield="exploitExistsPotential" title="Potential exploit exists">
+                <i class="fas fa-biohazard exploitexists text-danger-emphasis fs-6">
+                </i>
+                Potential exploit
+               </div>
+              </div>
+              <div class="col-md-4 small">
+              </div>
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the rusqlite crate 0.25.x before 0.25.4 and 0.26.x before 0.26.2 for Rust. create_aggregate_function has a use-after-free.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.27%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-26
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45713/" onclick="highlightOnClick(this)" title="CVE-2021-45713 security vulnerability details">
+               CVE-2021-45713
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+              <div class="col-md-4 small">
+              </div>
+              <div class="col-md-4 small">
+               <div data-tsvfield="exploitExistsPotential" title="Potential exploit exists">
+                <i class="fas fa-biohazard exploitexists text-danger-emphasis fs-6">
+                </i>
+                Potential exploit
+               </div>
+              </div>
+              <div class="col-md-4 small">
+              </div>
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the rusqlite crate 0.25.x before 0.25.4 and 0.26.x before 0.26.2 for Rust. create_scalar_function has a use-after-free.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.27%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-26
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45712/" onclick="highlightOnClick(this)" title="CVE-2021-45712 security vulnerability details">
+               CVE-2021-45712
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+              <div class="col-md-4 small">
+              </div>
+              <div class="col-md-4 small">
+               <div data-tsvfield="exploitExistsPotential" title="Potential exploit exists">
+                <i class="fas fa-biohazard exploitexists text-danger-emphasis fs-6">
+                </i>
+                Potential exploit
+               </div>
+              </div>
+              <div class="col-md-4 small">
+              </div>
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the rust-embed crate before 6.3.0 for Rust. A ../ directory traversal can sometimes occur in debug mode.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.53%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-26
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45711/" onclick="highlightOnClick(this)" title="CVE-2021-45711 security vulnerability details">
+               CVE-2021-45711
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the simple_asn1 crate 0.6.0 before 0.6.1 for Rust. There is a panic if UTCTime data, supplied by a remote attacker, has a second character greater than 0x7f.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.58%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-07-12
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45710/" onclick="highlightOnClick(this)" title="CVE-2021-45710 security vulnerability details">
+               CVE-2021-45710
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the tokio crate before 1.8.4, and 1.9.x through 1.13.x before 1.13.1, for Rust. In certain circumstances involving a closed oneshot channel, there is a data race and memory corruption.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_8">
+               8.1
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.13%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-11-01
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45709/" onclick="highlightOnClick(this)" title="CVE-2021-45709 security vulnerability details">
+               CVE-2021-45709
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the crypto2 crate through 2021-10-08 for Rust. During Chacha20 encryption and decryption, an unaligned read of a u32 may occur.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.22%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45708/" onclick="highlightOnClick(this)" title="CVE-2021-45708 security vulnerability details">
+               CVE-2021-45708
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the abomonation crate through 2021-10-17 for Rust. Because transmute operations are insufficiently constrained, there can be an information leak or ASLR bypass.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.29%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-10
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45707/" onclick="highlightOnClick(this)" title="CVE-2021-45707 security vulnerability details">
+               CVE-2021-45707
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the nix crate 0.16.0 and later before 0.20.2, 0.21.x before 0.21.2, and 0.22.x before 0.22.2 for Rust. unistd::getgrouplist has an out-of-bounds write if a user is in more than 16 /etc/groups groups.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.49%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-10-28
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45706/" onclick="highlightOnClick(this)" title="CVE-2021-45706 security vulnerability details">
+               CVE-2021-45706
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the zeroize_derive crate before 1.1.1 for Rust. Dropped memory is not zeroed out for an enum.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-06-22
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45705/" onclick="highlightOnClick(this)" title="CVE-2021-45705 security vulnerability details">
+               CVE-2021-45705
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the nanorand crate before 0.6.1 for Rust. There can be multiple mutable references to the same object because the TlsWyRand Deref implementation dereferences a raw pointer.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45704/" onclick="highlightOnClick(this)" title="CVE-2021-45704 security vulnerability details">
+               CVE-2021-45704
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the metrics-util crate before 0.7.0 for Rust. There is a data race and memory corruption because AtomicBucket&lt;T&gt; unconditionally implements the Send and Sync traits.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_8">
+               8.1
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.32%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45703/" onclick="highlightOnClick(this)" title="CVE-2021-45703 security vulnerability details">
+               CVE-2021-45703
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the tectonic_xdv crate before 0.1.12 for Rust. XdvParser::&lt;T&gt;::process may read from uninitialized memory locations.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45702/" onclick="highlightOnClick(this)" title="CVE-2021-45702 security vulnerability details">
+               CVE-2021-45702
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the tremor-script crate before 0.11.6 for Rust. A merge operation may result in a use-after-free.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.37%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-10
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45701/" onclick="highlightOnClick(this)" title="CVE-2021-45701 security vulnerability details">
+               CVE-2021-45701
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the tremor-script crate before 0.11.6 for Rust. A patch operation may result in a use-after-free.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.51%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-10
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45700/" onclick="highlightOnClick(this)" title="CVE-2021-45700 security vulnerability details">
+               CVE-2021-45700
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the ckb crate before 0.40.0 for Rust. Attackers can cause a denial of service (Nervos CKB blockchain node crash) via a dead call that is used as a DepGroup.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.28%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-07-12
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45699/" onclick="highlightOnClick(this)" title="CVE-2021-45699 security vulnerability details">
+               CVE-2021-45699
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the ckb crate before 0.40.0 for Rust. Remote attackers may be able to conduct a 51% attack against the Nervos CKB blockchain by triggering an inability to allocate memory for the misbehavior HashMap.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.55%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45698/" onclick="highlightOnClick(this)" title="CVE-2021-45698 security vulnerability details">
+               CVE-2021-45698
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the ckb crate before 0.40.0 for Rust. A get_block_template RPC call may fail in situations where it is supposed to select a Nervos CKB blockchain transaction with a higher fee rate than another transaction.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45697/" onclick="highlightOnClick(this)" title="CVE-2021-45697 security vulnerability details">
+               CVE-2021-45697
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the molecule crate before 0.7.2 for Rust. A FixVec partial read has an incorrect result.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-10
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45696/" onclick="highlightOnClick(this)" title="CVE-2021-45696 security vulnerability details">
+               CVE-2021-45696
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the sha2 crate 0.9.7 before 0.9.8 for Rust. Hashes of long messages may be incorrect when the AVX2-accelerated backend is used.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.19%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45695/" onclick="highlightOnClick(this)" title="CVE-2021-45695 security vulnerability details">
+               CVE-2021-45695
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the mopa crate through 2021-06-01 for Rust. It incorrectly relies on Trait memory layout, possibly leading to future occurrences of arbitrary code execution or ASLR bypass.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.83%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45694/" onclick="highlightOnClick(this)" title="CVE-2021-45694 security vulnerability details">
+               CVE-2021-45694
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the rdiff crate through 2021-02-03 for Rust. Window may read from uninitialized memory locations.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_7">
+               7.5
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_4 text-dark">
+               0.27%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45693/" onclick="highlightOnClick(this)" title="CVE-2021-45693 security vulnerability details">
+               CVE-2021-45693
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the messagepack-rs crate through 2021-01-26 for Rust. deserialize_string_primitive may read from uninitialized memory locations.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45692/" onclick="highlightOnClick(this)" title="CVE-2021-45692 security vulnerability details">
+               CVE-2021-45692
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the messagepack-rs crate through 2021-01-26 for Rust. deserialize_extension_others may read from uninitialized memory locations.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="border-top py-3 px-2 hover-bg-light" data-tsvfield="cveinfo">
+          <div class="row">
+           <div class="col-md-9">
+            <div class="row">
+             <h3 class="col-md-4 text-nowrap" data-tsvfield="cveId">
+              <a href="/cve/CVE-2021-45691/" onclick="highlightOnClick(this)" title="CVE-2021-45691 security vulnerability details">
+               CVE-2021-45691
+              </a>
+             </h3>
+             <div class="col-auto flex-fill row text-secondary">
+             </div>
+            </div>
+            <div class="cvesummarylong py-0" data-tsvfield="summary">
+             An issue was discovered in the messagepack-rs crate through 2021-01-26 for Rust. deserialize_string may read from uninitialized memory locations.
+            </div>
+            <div class="cvelistassigner">
+             Source:
+             <span>
+              MITRE
+             </span>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Max CVSS
+             </div>
+             <div class="col-6" data-tsvfield="maxCvssBaseScore">
+              <div class="cvssbox score_9">
+               9.8
+              </div>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              EPSS Score
+             </div>
+             <div class="col-6" data-tsvfield="epssScore">
+              <span class="epssbox score_6 text-dark">
+               0.41%
+              </span>
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Published
+             </div>
+             <div class="col-6" data-tsvfield="publishDate">
+              2021-12-27
+             </div>
+            </div>
+            <div class="row mb-1">
+             <div class="col-6 col-md-12 col-lg-6">
+              Updated
+             </div>
+             <div class="col-6" data-tsvfield="updateDate">
+              2022-01-06
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <script>
+        function getElementTextOrEmptyString(elem){	
+	if(elem){
+		return elem.text().trim();
+	}
+	else{
+		return "";
+	}
+}	
+function copyResultsAsTSV(){
+	var cveinfos = $('#searchresults div[data-tsvfield=\'cveinfo\']');
+	var tsv = 'CVE\tPublished\tLast Update\tMax CVSS Base Score\tEPSS Score\tCISA KEV Added\tPublic Exploit Exists\tSummary\n';
+	cveinfos.each(function(index, cveinfoelem){
+		try{
+			tsv+=$(cveinfoelem).find('[data-tsvfield="cveId"]').text();
+			tsv+="\t";
+			tsv+=getElementTextOrEmptyString($(cveinfoelem).find('[data-tsvfield="publishDate"]'));		
+			tsv+="\t";
+			tsv+=getElementTextOrEmptyString($(cveinfoelem).find('[data-tsvfield="updateDate"]'));		
+			tsv+="\t";
+			tsv+=getElementTextOrEmptyString($(cveinfoelem).find('[data-tsvfield="maxCvssBaseScore"]'));
+			tsv+="\t";
+			tsv+=getElementTextOrEmptyString($(cveinfoelem).find('[data-tsvfield="epssScore"]'));		
+			tsv+="\t";
+						tsv+=getElementTextOrEmptyString($(cveinfoelem).find('[data-tsvfield="cisaExploitAdd"]'));		
+			tsv+="\t";
+			var exploitText = getElementTextOrEmptyString($(cveinfoelem).find('[data-tsvfield="exploitExistsPublic"]'));		
+			if(exploitText){
+				tsv+="Public";
+			}
+			else{
+				exploitText = getElementTextOrEmptyString($(cveinfoelem).find('[data-tsvfield="exploitExistsPotential"]'));
+				if(exploitText){
+					tsv+="Potential";
+				}
+				else{
+					tsv+="";
+				}
+			}
+			tsv+="\t";		
+			tsv+=$(cveinfoelem).find('[data-tsvfield="summary"]').text().trim().replace(/\n/g, "\\n").replace(/\t/g, "\\t");
+			tsv+="\n";
+		}
+		catch(ex){
+			alert('Unexpected error copying results. Please report this error');
+			console.log(ex);
+		}
+	});
+	navigator.clipboard.writeText(tsv);
+}
+
+function highlightOnClick(element){
+	element.classList.add('hlighted');
+}
+       </script>
+       <script>
+        function copypaging(){
+		var t=document.getElementById('pagingt');
+		var b=document.getElementById('pagingb');
+		t.innerHTML=b.innerHTML;
+		t.style.display='';
+		if(window.innerWidth<767){
+			t.scrollIntoView();
+		}
+	}
+       </script>
+       <div class="paging" id="pagingb">
+        <span class="me-2">
+         Page: 2
+        </span>
+        <a class="p-0" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=1" title="First page">
+         <i class="fas fa-fast-backward btn btn-sm btn-primary text-white py-1 px-3">
+         </i>
+        </a>
+        <a class="p-0" href="/vulnerability-list/year-2021/month-12/December.html?page=1&amp;order=1" title="Previous page">
+         <i class="fas fa-chevron-left btn btn-sm btn-primary text-white py-1 px-3">
+         </i>
+        </a>
+        <a class="p-0" href="/vulnerability-list/year-2021/month-12/December.html?page=3&amp;order=1" title="Next page">
+         <i class="fas fa-chevron-right btn btn-sm btn-primary text-white py-1 px-3 me-0">
+         </i>
+        </a>
+       </div>
+       <script>
+        $(document).ready(function() {
+					copypaging();
+				});
+       </script>
+      </main>
+     </div>
+     <!-- contentdiv -->
+    </div>
+   </div>
+   <!-- main container -->
+   <footer>
+    <div class="ssc-footer text-center border-bottom-0 mt-4 mb-0">
+     <a class="mx-4" href="/about-contact.php" title="About cvedetails.com">
+      About
+     </a>
+     <a class="mx-4" href="/terms-and-conditions.php">
+      Terms of Use
+     </a>
+     <a class="mx-4" href="/privacy.php">
+      Privacy Policy
+     </a>
+     <a class="mx-4" href="/cve-help.php" title="Help topics and more information about CVE">
+      CVE Help
+     </a>
+     <a class="mx-4" href="/faq.php" title="Frequently asked questions">
+      FAQ
+     </a>
+     <a class="mx-4" href="/how-does-it-work.php" title="Known limitations &amp; technical details">
+      How it works
+     </a>
+     <a class="mx-2 ssc-link-2nd" href="https://twitter.com/security_score" target="_blank" title="Follow SecurityScorecard on twitter">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+    </div>
+    <div class="ssc-footer mt-0">
+     <div class="row px-4">
+      <div class="col-2 col-md-2 ps-4 text-center">
+       <img border="0" height="36px" src="/img/ssc-logo.svg" title="SecurityScorecard" width="36px"/>
+      </div>
+      <div class="col-10 col-md-10 row">
+       <div class="col-md-5 col-lg-3 ps-4">
+        SecurityScorecard
+        <br/>
+        1140 Avenue of the Americas
+        <br/>
+        19th Floor
+        <br/>
+        New York, NY 10036
+        <br/>
+        info@securityscorecard.io
+        <br/>
+        United States: (800) 682-1707
+        <br/>
+        International: +1(646) 809-2166
+       </div>
+       <div class="col-md-2 col-lg-3 ps-4">
+        <a href="https://securityscorecard.com/product/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard products. Security ratings, automated assessments, and guidance">
+         Products
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/solutions?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard Cybersecurity Risk Rating &amp; Third-Party Risk Management Solutions">
+         Solutions
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/customers/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard customers">
+         Customers
+        </a>
+        <br/>
+        <a href="https://platform.securityscorecard.io/#/marketplace?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard Marketplace. Apps integrations and partners">
+         Marketplace
+        </a>
+        <br/>
+       </div>
+       <div class="col-md-3 col-lg-3 ps-4">
+        <a href="https://securityscorecard.com/partners/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard partners">
+         Partners
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/resources/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard case studies, reports, ebooks and more resources">
+         Resources
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/company/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard company and organization">
+         Company
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/trust/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard trust portal. Transparency into ratings methodology, insights into how it aligns with industry standards">
+         Trust Portal
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/security-rating?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard security ratings">
+         Security Ratings
+        </a>
+       </div>
+       <div class="col-md-2 col-lg-3 ps-4">
+        <a href="https://platform.securityscorecard.io/#/start?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard platform login">
+         Login
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/blog/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard blog">
+         Blog
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/company/contact-us/?utm_source=cvedetails" rel="noopener" target="_blank" title="Contact SecurityScorecard">
+         Contact
+        </a>
+        <br/>
+        <a href="https://securityscorecard.com/company/careers/?utm_source=cvedetails" rel="noopener" target="_blank" title="SecurityScorecard careers">
+         Careers
+        </a>
+        <br/>
+        <a href="https://support.securityscorecard.com?utm_source=cvedetails" rel="noopener" target="_blank" title="Feedback">
+         Feedback
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="disclaimer p-2">
+     This product uses data from the NVD API but is not endorsed or certified by the NVD.
+	See
+     <a href="http://nvd.nist.gov" rel="noopener" target="_blank" title="National vulnerability database web site - External link ">
+      NVD website
+     </a>
+     for more information.			
+
+	CVE is a registred trademark of the MITRE Corporation and the     authoritative  source of CVE content is
+     <a href="http://cve.mitre.org/" target="_blank">
+      MITRE's CVE web site
+     </a>
+     .
+
+	 CWE is a registred trademark of the MITRE Corporation and the     authoritative  source of CWE content is
+     <a href="http://cwe.mitre.org/" target="_blank">
+      MITRE's CWE web site
+     </a>
+     .
+
+	OVAL is a registered trademark of The MITRE Corporation and the authoritative  source of OVAL content is
+     <a href="http://oval.mitre.org" target="_blank">
+      MITRE's OVAL web site
+     </a>
+     .
+    </div>
+   </footer>
+   <!-- outer container -->
+  </div>
+  <div id="scrolltotop" style="position:fixed; bottom: 1rem; right:2rem;">
+   <a class="fs-5" href="#top" title="Top of the page">
+    <i class="fas fa-arrow-circle-up">
+    </i>
+   </a>
+  </div>
+  <script>
+   function cookieconsentOK(){
+            var d = new Date();
+            d.setTime(d.getTime() + (365*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = "cvedconsent=1; expires="+expires+"; path=/";
+            window.location.reload();
+        }
+		function cookieconsentReject(){
+			showhide('cookieconsentwarningcontainer');
+		}
+  </script>
+  <div id="cookieconsentwarningcontainer" style="display:''">
+   <div class="fixed-bottom d-flex flex-row align-items-center p-3 px-md-4 border-bottom shadow-sm bg-warning" id="cookieconsentwarning" style="height:33vh; min-height: 175px;">
+    <div class="text-dark text-center flex-grow-1 align-items-center">
+     This web site uses cookies for managing your session, storing preferences, website analytics and additional purposes 
+			 described in our
+     <a href="/privacy.php">
+      privacy policy
+     </a>
+     .
+     <br/>
+     <span class="fs-6 mt-2">
+      By using this web site you are agreeing to CVEdetails.com
+      <a href="/terms-and-conditions.php">
+       terms of use
+      </a>
+      !
+     </span>
+    </div>
+    <div class="flex-grow-0 flex-shrink-0 justify-content-start align-items-center">
+     <a class="p-2 btn btn-primary" href="javascript:cookieconsentOK()">
+      Accept
+     </a>
+     <a class="p-2 btn btn-secondary" href="javascript:cookieconsentReject()">
+      Close
+     </a>
+    </div>
+   </div>
+  </div>
+  <script crossorigin="anonymous" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
+  </script>
+ </body>
+</html>
