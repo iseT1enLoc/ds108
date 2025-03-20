@@ -1,0 +1,212 @@
+2025/03/20 09:59:20 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-02/February.html?page=1&order=1
+2025/03/20 09:59:20 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2015/month-02/February.html?page=1&order=1
+2025/03/20 09:59:30 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2025/month-03/March.html?page=1&order=1
+2025/03/20 09:59:30 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=1&order=1
+2025/03/20 09:59:40 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-01/January.html?page=1&order=1
+2025/03/20 09:59:40 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-02/February.html?page=1&order=1
+2025/03/20 09:59:50 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-03/March.html?page=1&order=1
+2025/03/20 09:59:50 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2018/month-01/January.html?page=1&order=1
+2025/03/20 09:59:59 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 09:59:59 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:00:04 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:00:04 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:00:09 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:00:09 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:00:14 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:00:14 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2018/month-02/February.html?page=1&order=1
+2025/03/20 10:00:18 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:00:19 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:00:23 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:00:24 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:00:28 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:00:29 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:00:33 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2018/month-03/March.html?page=1&order=1
+2025/03/20 10:00:34 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:00:36 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:00:39 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:00:41 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:00:44 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:00:46 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:00:49 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:00:51 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2019/month-01/January.html?page=1&order=1
+2025/03/20 10:00:54 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:00:56 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:00:59 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:01:01 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:01:04 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:01:06 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:01:09 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:01:11 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2019/month-02/February.html?page=1&order=1
+2025/03/20 10:01:14 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:01:16 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:01:19 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:01:21 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:01:24 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:01:26 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:01:29 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:01:31 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2019/month-03/March.html?page=1&order=1
+2025/03/20 10:01:33 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:01:34 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:01:38 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:01:39 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:01:43 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2019/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:01:44 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2020/month-01/January.html?page=1&order=1
+2025/03/20 10:01:47 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:01:48 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2020/month-02/February.html?page=1&order=1
+2025/03/20 10:01:51 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:01:52 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:01:56 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:01:57 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:02:01 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:02:02 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2020/month-03/March.html?page=1&order=1
+2025/03/20 10:02:06 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2021/month-01/January.html?page=1&order=1
+2025/03/20 10:02:06 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:02:10 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:02:11 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:02:15 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:02:16 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2020/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:02:20 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:02:21 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2021/month-02/February.html?page=1&order=1
+2025/03/20 10:02:24 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:02:25 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2021/month-03/March.html?page=1&order=1
+2025/03/20 10:02:29 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:02:29 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:02:34 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:02:34 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:02:39 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2022/month-01/January.html?page=1&order=1
+2025/03/20 10:02:39 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2021/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:02:41 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:02:44 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2022/month-02/February.html?page=1&order=1
+2025/03/20 10:02:46 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:02:47 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:02:51 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:02:52 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:02:56 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2022/month-03/March.html?page=1&order=1
+2025/03/20 10:02:57 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:02:58 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:03:02 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2023/month-01/January.html?page=1&order=1
+2025/03/20 10:03:03 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:03:05 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:03:08 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2022/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:03:10 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:03:13 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2023/month-02/February.html?page=1&order=1
+2025/03/20 10:03:15 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:03:16 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:03:20 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2023/month-03/March.html?page=1&order=1
+2025/03/20 10:03:21 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:03:24 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:03:26 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:03:29 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:03:31 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2024/month-01/January.html?page=1&order=1
+2025/03/20 10:03:34 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:03:34 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2023/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:03:39 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:03:39 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2024/month-02/February.html?page=1&order=1
+2025/03/20 10:03:43 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:03:44 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:03:48 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:03:49 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2024/month-03/March.html?page=1&order=1
+2025/03/20 10:03:51 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:03:53 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:03:56 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:03:58 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2025/month-01/January.html?page=1&order=1
+2025/03/20 10:04:01 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2024/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:04:03 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:04:06 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2025/month-02/February.html?page=1&order=1
+2025/03/20 10:04:08 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:04:11 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-02/February.html?page=1&order=1: Too Many Requests
+2025/03/20 10:04:13 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:04:16 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:04:18 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2015/month-01/January.html?page=1&order=1
+2025/03/20 10:04:21 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:04:21 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-02/February.html?page=1&order=1: URL already visited
+2025/03/20 10:04:26 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:04:26 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-01/January.html?page=1&order=1
+2025/03/20 10:04:30 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-01/January.html?page=1&order=1: Too Many Requests
+2025/03/20 10:04:31 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:04:35 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:04:36 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2015/month-03/March.html?page=1&order=1
+2025/03/20 10:04:38 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-03/March.html?page=1&order=1: Too Many Requests
+2025/03/20 10:04:40 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-01/January.html?page=1&order=1: URL already visited
+2025/03/20 10:04:43 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:04:45 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2015/month-02/February.html?page=2&order=1
+2025/03/20 10:04:48 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-02/February.html?page=2&order=1: Too Many Requests
+2025/03/20 10:04:48 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-03/March.html?page=1&order=1: URL already visited
+2025/03/20 10:04:53 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-02/February.html?page=2&order=1: URL already visited
+2025/03/20 10:04:53 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-02/February.html?page=2&order=1
+2025/03/20 10:04:57 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-02/February.html?page=2&order=1: Too Many Requests
+2025/03/20 10:04:58 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2015/month-02/February.html?page=2&order=1: URL already visited
+2025/03/20 10:05:02 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-02/February.html?page=2&order=1: URL already visited
+2025/03/20 10:05:03 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=2&order=1
+2025/03/20 10:05:03 ✅ Saved to: storage/2015/CVE_2015_February.csv
+2025/03/20 10:05:07 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-02/February.html?page=2&order=1: URL already visited
+2025/03/20 10:05:12 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2025/month-03/March.html?page=2&order=1
+2025/03/20 10:05:12 ✅ Saved to: storage/2016/CVE_2016_February.csv
+2025/03/20 10:05:12 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-01/January.html?page=2&order=1
+2025/03/20 10:05:21 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-02/February.html?page=2&order=1
+2025/03/20 10:05:22 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-03/March.html?page=2&order=1
+2025/03/20 10:05:30 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2018/month-01/January.html?page=2&order=1
+2025/03/20 10:05:33 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=3&order=1
+2025/03/20 10:05:39 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-01/January.html?page=3&order=1
+2025/03/20 10:05:44 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2025/month-03/March.html?page=3&order=1
+2025/03/20 10:05:47 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:05:47 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-03/March.html?page=3&order=1: Too Many Requests
+2025/03/20 10:05:52 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-03/March.html?page=3&order=1: URL already visited
+2025/03/20 10:05:52 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:05:57 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:05:57 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2025/month-03/March.html?page=3&order=1: URL already visited
+2025/03/20 10:06:02 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-02/February.html?page=3&order=1
+2025/03/20 10:06:02 ✅ Saved to: storage/2025/CVE_2025_March.csv
+2025/03/20 10:06:02 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:06:06 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-02/February.html?page=3&order=1: Too Many Requests
+2025/03/20 10:06:07 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:06:11 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-02/February.html?page=3&order=1: URL already visited
+2025/03/20 10:06:12 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:06:16 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-02/February.html?page=3&order=1: URL already visited
+2025/03/20 10:06:18 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:06:21 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-03/March.html?page=3&order=1
+2025/03/20 10:06:21 ✅ Saved to: storage/2017/CVE_2017_February.csv
+2025/03/20 10:06:23 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:06:24 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-03/March.html?page=3&order=1: Too Many Requests
+2025/03/20 10:06:28 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:06:29 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-03/March.html?page=3&order=1: URL already visited
+2025/03/20 10:06:33 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:06:34 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-03/March.html?page=3&order=1: URL already visited
+2025/03/20 10:06:38 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:06:39 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2018/month-01/January.html?page=3&order=1
+2025/03/20 10:06:39 ✅ Saved to: storage/2017/CVE_2017_March.csv
+2025/03/20 10:06:42 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-01/January.html?page=3&order=1: Too Many Requests
+2025/03/20 10:06:43 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:06:47 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-01/January.html?page=3&order=1: URL already visited
+2025/03/20 10:06:48 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:06:52 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2018/month-01/January.html?page=3&order=1: URL already visited
+2025/03/20 10:06:53 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:06:57 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=4&order=1
+2025/03/20 10:06:57 ✅ Saved to: storage/2018/CVE_2018_January.csv
+2025/03/20 10:06:58 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:07:02 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=4&order=1: Too Many Requests
+2025/03/20 10:07:03 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:07:07 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=4&order=1: URL already visited
+2025/03/20 10:07:08 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:07:12 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=4&order=1: URL already visited
+2025/03/20 10:07:13 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:07:17 ✅ Saved to: storage/2016/CVE_2016_March.csv
+2025/03/20 10:07:18 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:07:23 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:07:28 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:07:33 Retrying CVE type fetch: 1/3 after error: Too Many Requests
+2025/03/20 10:07:38 Retrying CVE type fetch: 2/3 after error: URL already visited
+2025/03/20 10:07:43 Retrying CVE type fetch: 3/3 after error: URL already visited
+2025/03/20 10:07:48 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2017/month-01/January.html?page=4&order=1
+2025/03/20 10:07:52 Retry 1/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-01/January.html?page=4&order=1: Too Many Requests
+2025/03/20 10:07:57 Retry 2/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-01/January.html?page=4&order=1: URL already visited
+2025/03/20 10:08:02 Retry 3/3 for https://www.cvedetails.com/vulnerability-list/year-2017/month-01/January.html?page=4&order=1: URL already visited
+2025/03/20 10:08:07 ✅ Saved to: storage/2017/CVE_2017_January.csv
+2025/03/20 10:11:13 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-05/May.html?page=1&order=1
+2025/03/20 10:11:13 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2015/month-08/August.html?page=1&order=1
+2025/03/20 10:11:24 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-01/January.html?page=1&order=1
+2025/03/20 10:11:24 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-02/February.html?page=1&order=1
+2025/03/20 10:11:33 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-03/March.html?page=1&order=1
+2025/03/20 10:11:33 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2016/month-04/April.html?page=1&order=1
+2025/03/20 10:11:41 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2018/month-11/November.html?page=1&order=1
+2025/03/20 10:11:43 Fetched URL: https://www.cvedetails.com/vulnerability-list/year-2015/month-01/January.html?page=1&order=1

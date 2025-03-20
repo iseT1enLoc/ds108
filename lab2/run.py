@@ -5,7 +5,6 @@ import os
 import csv
 import time
 import random
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Base URL for CVE details
 BASE_URL = "https://www.cvedetails.com"
@@ -26,7 +25,9 @@ month_mapping = {
 # List of years and months to fetch
 years = [str(year) for year in range(2015, 2026)]
 months = list(month_mapping.keys())
-
+def log_fetched_url(url):
+    with open("fetch_log.txt", "a") as log_file:
+        log_file.write(f"{url}\n")
 # Function to get CVE type from its details page
 def get_cve_type(url):
     try:
@@ -51,7 +52,8 @@ def process_single_page(year, month_text, month_num, page_number):
         if r.status_code != 200:
             print(f"Failed to fetch {full_url}, status code: {r.status_code}")
             return [], False
-
+        # Log the fetched URL
+        log_fetched_url(full_url)
         soup = BeautifulSoup(r.content, "html.parser")
         cve_entries = soup.find_all("div", {"data-tsvfield": "cveinfo"})
 
@@ -81,12 +83,7 @@ def process_single_page(year, month_text, month_num, page_number):
                 "Published": published_date,
                 "Updated": updated_date,
             })
-
-        # Check if there is a "Next Page" button
-        next_page_link = soup.find("a", {"class": "nextpage"})
-        has_next_page = next_page_link is not None
-
-        return cve_data, has_next_page
+        return cve_data
 
     except Exception as e:
         print(f"Error processing page {page_number} of {month_text} {year}: {e}")
@@ -98,19 +95,19 @@ def fetch_and_save_cve(year, month):
     records = []
     
     while True:  # Keep fetching until no more pages exist
-        single_record, has_next_page = process_single_page(year, month, month_mapping[month], page_number)
+        try:
+            single_record = process_single_page(year, month, month_mapping[month], page_number)
 
-        if not single_record:  # If an empty page is encountered, stop fetching
-            break
+            if not single_record:  # If an empty page is encountered, stop fetching
+                break
 
-        records.extend(single_record)
-        page_number += 1  # Move to the next page
+            records.extend(single_record)
+            page_number += 1  # Move to the next page
 
-        # Wait 2-5 seconds between requests to avoid blocking
-        time.sleep(random.uniform(2, 5))
-
-        if not has_next_page:
-            print(f"Finished fetching {month} {year}, stopping at page {page_number - 1}")
+            # Wait 2-5 seconds between requests to avoid blocking
+            time.sleep(random.uniform(2, 5))
+        except Exception as e:
+            print(f"Error processing {year}-{month} page {page_number}: {e}")
             break
 
     # Export to CSV if records exist
@@ -126,17 +123,15 @@ def fetch_and_save_cve(year, month):
 
         print(f"✅ Exported: {filename}")
 
-# Main execution with concurrency
+# Main execution without concurrency
 if __name__ == "__main__":
     start_time = datetime.datetime.now()
 
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        futures = {executor.submit(fetch_and_save_cve, year, month): (year, month) for year in years for month in months}
-
-        for future in as_completed(futures):
-            year, month = futures[future]
+    # Sequential processing using nested loops
+    for year in years:
+        for month in months:
             try:
-                future.result()  # Ensure any exception is raised
+                fetch_and_save_cve(year, month)
             except Exception as e:
                 print(f"❌ Error processing {year}-{month}: {e}")
 

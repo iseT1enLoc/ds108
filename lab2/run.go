@@ -14,7 +14,6 @@ import (
 	"github.com/gocolly/colly"
 )
 
-// CVE struct to hold vulnerability data
 type CVE struct {
 	ID          string
 	Type        string
@@ -25,41 +24,106 @@ type CVE struct {
 	Updated     string
 }
 
-// Constants
 const BaseURL = "https://www.cvedetails.com"
 
-// Mapping month names to numbers
 var monthMapping = map[string]string{
 	"January": "01", "February": "02", "March": "03", "April": "04", "May": "05", "June": "06",
 	"July": "07", "August": "08", "September": "09", "October": "10", "November": "11", "December": "12",
 }
 
-// Years and months to scrape
 var years = []string{"2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"}
-var months = []string{"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}
+var months = []string{
+	"January", "February", "March", "April", "May", "June",
+	"July", "August", "September", "October", "November", "December",
+}
 
-// Function to get CVE type from its details page
+var userAgents = []string{
+	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+}
+
+var proxyList = []string{
+	"http://proxy1:port",
+	"http://proxy2:port",
+	"http://proxy3:port",
+}
+
+const (
+	maxRetries       = 3
+	concurrencyLimit = 2
+	logFile          = "scrape.log"
+)
+
+// Initialize logger
+func init() {
+	file, err := os.OpenFile(logFile, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	if err != nil {
+		log.Fatalf("Failed to open log file: %v", err)
+	}
+	log.SetOutput(file)
+}
+
+// Log fetched URLs to the log file
+func logFetchedURL(url string) {
+	log.Printf("Fetched URL: %s\n", url)
+}
+
+// Random sleep between requests to avoid getting blocked
+func randomSleep() {
+	delay := time.Duration(rand.Intn(3000)+2000) * time.Millisecond // 2-5 seconds
+	time.Sleep(delay)
+}
+
+// Get CVE type from details page
 func getCVEType(url string) string {
 	c := colly.NewCollector()
+
+	// Set random User-Agent
+	c.UserAgent = userAgents[rand.Intn(len(userAgents))]
+
+	// Set Proxy (if available)
+	if len(proxyList) > 0 {
+		c.SetProxy(proxyList[rand.Intn(len(proxyList))])
+	}
+
 	var cveType string = "N/A"
 
 	c.OnHTML("#cve_catslabelsnotes_div span.ssc-vuln-cat", func(e *colly.HTMLElement) {
 		cveType = strings.TrimSpace(e.Text)
 	})
 
-	err := c.Visit(url)
-	if err != nil {
-		log.Println("Error fetching CVE type:", err)
+	for i := 0; i < maxRetries; i++ {
+		err := c.Visit(url)
+		if err == nil {
+			return cveType
+		}
+		log.Printf("Retrying CVE type fetch: %d/%d after error: %v", i+1, maxRetries, err)
+		time.Sleep(5 * time.Second) // Backoff before retry
 	}
+
 	return cveType
 }
 
-// Function to scrape CVEs from a single page
-func scrapePage(year, monthText, monthNum string, page int, resultsChan chan<- []CVE) {
+// Scrape single page
+func scrapePage(year, monthText, monthNum string, page int) ([]CVE, error) {
 	url := fmt.Sprintf("%s/vulnerability-list/year-%s/month-%s/%s.html?page=%d&order=1", BaseURL, year, monthNum, monthText, page)
 	fmt.Println("Fetching:", url)
 
+	// Log the fetched URL
+	logFetchedURL(url)
+
+	randomSleep() // Add human-like delay
+
 	c := colly.NewCollector()
+
+	// Set random User-Agent
+	c.UserAgent = userAgents[rand.Intn(len(userAgents))]
+
+	// Set Proxy (if available)
+	if len(proxyList) > 0 {
+		c.SetProxy(proxyList[rand.Intn(len(proxyList))])
+	}
 
 	var cves []CVE
 
@@ -72,7 +136,8 @@ func scrapePage(year, monthText, monthNum string, page int, resultsChan chan<- [
 		published := e.ChildText("div[data-tsvfield='publishDate']")
 		updated := e.ChildText("div[data-tsvfield='updateDate']")
 
-		cveType := getCVEType(cveLink) // Fetch CVE type separately
+		// Get CVE type from details page
+		cveType := getCVEType(cveLink)
 
 		cves = append(cves, CVE{
 			ID:          cveID,
@@ -85,28 +150,34 @@ func scrapePage(year, monthText, monthNum string, page int, resultsChan chan<- [
 		})
 	})
 
-	err := c.Visit(url)
-	if err != nil {
-		log.Println("Error fetching page:", err)
+	for i := 0; i < maxRetries; i++ {
+		err := c.Visit(url)
+		if err == nil {
+			break
+		}
+		log.Printf("Retry %d/%d for %s: %v", i+1, maxRetries, url, err)
+		time.Sleep(5 * time.Second) // Backoff
 	}
 
-	// Send results to channel
-	resultsChan <- cves
+	return cves, nil
 }
 
-// Function to save CVEs to CSV
+// Save data to CSV
 func saveToCSV(year, month string, records []CVE) {
 	if len(records) == 0 {
 		return
 	}
 
-	outputDir := "storage"
-	os.MkdirAll(outputDir, os.ModePerm)
-	filename := filepath.Join(outputDir, fmt.Sprintf("CVE_%s_%s.csv", year, month))
+	outputDir := filepath.Join("storage", year)
+	if err := os.MkdirAll(outputDir, os.ModePerm); err != nil {
+		log.Printf("Error creating output directory: %v", err)
+		return
+	}
 
+	filename := filepath.Join(outputDir, fmt.Sprintf("CVE_%s_%s.csv", year, month))
 	file, err := os.Create(filename)
 	if err != nil {
-		log.Println("Error creating CSV file:", err)
+		log.Printf("Error creating CSV file: %v", err)
 		return
 	}
 	defer file.Close()
@@ -114,39 +185,36 @@ func saveToCSV(year, month string, records []CVE) {
 	writer := csv.NewWriter(file)
 	defer writer.Flush()
 
-	// Write header
 	writer.Write([]string{"CVE ID", "CVE Type", "Description", "Max CVSS", "EPSS Score", "Published", "Updated"})
 
-	// Write rows
 	for _, record := range records {
 		writer.Write([]string{record.ID, record.Type, record.Description, record.MaxCVSS, record.EPSSScore, record.Published, record.Updated})
 	}
 
-	fmt.Println("✅ Exported:", filename)
+	fmt.Println("✅ Saved to:", filename)
+	log.Printf("✅ Saved to: %s", filename)
 }
 
-// Function to fetch all pages for a given month-year
-func fetchAndSaveCVE(wg *sync.WaitGroup, year, month string) {
+// Worker for concurrency
+func worker(year, month string, semaphore chan struct{}, wg *sync.WaitGroup) {
 	defer wg.Done()
 
 	monthNum := monthMapping[month]
 	page := 1
-	resultsChan := make(chan []CVE, 10)
 	var allRecords []CVE
 
 	for {
-		go scrapePage(year, month, monthNum, page, resultsChan)
+		semaphore <- struct{}{}
 
-		// Simulate random delay to avoid getting blocked
-		time.Sleep(time.Duration(rand.Intn(3)+2) * time.Second)
-
-		records := <-resultsChan
-		if len(records) == 0 {
+		records, err := scrapePage(year, month, monthNum, page)
+		if err != nil || len(records) == 0 {
+			<-semaphore
 			break
 		}
 
 		allRecords = append(allRecords, records...)
 		page++
+		<-semaphore
 	}
 
 	saveToCSV(year, month, allRecords)
@@ -156,14 +224,15 @@ func main() {
 	startTime := time.Now()
 
 	var wg sync.WaitGroup
+	semaphore := make(chan struct{}, concurrencyLimit)
 
 	for _, year := range years {
 		for _, month := range months {
 			wg.Add(1)
-			go fetchAndSaveCVE(&wg, year, month)
+			go worker(year, month, semaphore, &wg)
 		}
 	}
 
 	wg.Wait()
-	fmt.Println("⏳ Total Time Needed:", time.Since(startTime))
+	fmt.Println("✅ Completed all downloads in:", time.Since(startTime))
 }
