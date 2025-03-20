@@ -4,6 +4,7 @@ import datetime
 import os
 import csv
 import time
+import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Base URL for CVE details
@@ -29,24 +30,21 @@ months = list(month_mapping.keys())
 # Function to get CVE type from its details page
 def get_cve_type(url):
     try:
+        time.sleep(random.uniform(1, 3))  # Prevent request blocking
         r = requests.get(url, headers=headers)
         if r.status_code == 200:
             soup = BeautifulSoup(r.content, "html.parser")
             div = soup.find("div", {"id": "cve_catslabelsnotes_div"})
-            span = div.find("span", {"class": "ssc-vuln-cat"})
+            span = div.find("span", {"class": "ssc-vuln-cat"}) if div else None
             return span.text.strip() if span else "N/A"
     except Exception as e:
         print(f"Error fetching CVE type from {url}: {e}")
     return "N/A"
 
 # Function to process a single page and extract CVE records
-def process_single_page(url, month_text, month_num, year, page_number):
-    """
-    Fetches a single page of CVE data and extracts relevant information.
-    Returns a tuple: (list of CVE records, has_next_page)
-    """
+def process_single_page(year, month_text, month_num, page_number):
     try:
-        full_url = f"{BASE_URL}/vulnerability-list/year-{year}/month-{month_num}/{month_text}.html?page={page_number}"
+        full_url = f"{BASE_URL}/vulnerability-list/year-{year}/month-{month_num}/{month_text}.html?page={page_number}"+"&order=1"
         print(f"Fetching {full_url}")
 
         r = requests.get(full_url, headers=headers)
@@ -57,10 +55,11 @@ def process_single_page(url, month_text, month_num, year, page_number):
         soup = BeautifulSoup(r.content, "html.parser")
         cve_entries = soup.find_all("div", {"data-tsvfield": "cveinfo"})
 
-        # If no CVE entries found, stop
         if not cve_entries:
-            print(f"No more records on {month_text} {year}, stopping at page {page_number}")
+            print(f"No CVEs found on page {page_number} of {month_text} {year}, stopping.")
             return [], False
+
+        print(f"Page {page_number}: Found {len(cve_entries)} CVEs.")
 
         cve_data = []
         for entry in cve_entries:
@@ -84,7 +83,7 @@ def process_single_page(url, month_text, month_num, year, page_number):
             })
 
         # Check if there is a "Next Page" button
-        next_page_link = soup.find("a", string="Next")
+        next_page_link = soup.find("a", {"class": "nextpage"})
         has_next_page = next_page_link is not None
 
         return cve_data, has_next_page
@@ -99,7 +98,7 @@ def fetch_and_save_cve(year, month):
     records = []
     
     while True:  # Keep fetching until no more pages exist
-        single_record, has_next_page = process_single_page(BASE_URL, month, month_mapping[month], year, str(page_number))
+        single_record, has_next_page = process_single_page(year, month, month_mapping[month], page_number)
 
         if not single_record:  # If an empty page is encountered, stop fetching
             break
@@ -107,12 +106,11 @@ def fetch_and_save_cve(year, month):
         records.extend(single_record)
         page_number += 1  # Move to the next page
 
-        # Wait 2 seconds between requests to avoid getting blocked
-        time.sleep(2)
+        # Wait 2-5 seconds between requests to avoid blocking
+        time.sleep(random.uniform(2, 5))
 
-        # Stop if no more pages exist
         if not has_next_page:
-            print(f"Finished fetching {month} {year}, stopping at page {page_number}")
+            print(f"Finished fetching {month} {year}, stopping at page {page_number - 1}")
             break
 
     # Export to CSV if records exist
@@ -126,7 +124,7 @@ def fetch_and_save_cve(year, month):
             writer.writeheader()
             writer.writerows(records)
 
-        print(f"Exported: {filename}")
+        print(f"✅ Exported: {filename}")
 
 # Main execution with concurrency
 if __name__ == "__main__":
@@ -140,7 +138,7 @@ if __name__ == "__main__":
             try:
                 future.result()  # Ensure any exception is raised
             except Exception as e:
-                print(f"Error processing {year}-{month}: {e}")
+                print(f"❌ Error processing {year}-{month}: {e}")
 
     end_time = datetime.datetime.now()
-    print(f"Total Time Needed: {end_time - start_time}")
+    print(f"⏳ Total Time Needed: {end_time - start_time}")

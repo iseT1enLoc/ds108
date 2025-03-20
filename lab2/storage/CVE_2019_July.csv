@@ -1,0 +1,26 @@
+CVE ID,CVE Type,Description,Max CVSS,EPSS Score,Published,Updated
+CVE-2019-1020019,N/A,invenio-previewer before 1.0.0a12 allows XSS.,6.1,0.23%,2019-07-29,2019-07-31
+CVE-2019-1020018,N/A,Discourse before 2.3.0 and 2.4.x before 2.4.0.beta3 lacks a confirmation screen when logging in via an email link.,7.5,0.33%,2019-07-29,2022-04-18
+CVE-2019-1020017,N/A,Discourse before 2.3.0 and 2.4.x before 2.4.0.beta3 lacks a confirmation screen when logging in via a user-api OTP.,5.3,0.29%,2019-07-29,2023-03-03
+CVE-2019-1020016,N/A,ASH-AIO before 2.0.0.3 allows an open redirect.,6.1,0.20%,2019-07-29,2019-08-01
+CVE-2019-1020015,N/A,graphql-engine (aka Hasura GraphQL Engine) before 1.0.0-beta.3 mishandles the audience check while verifying JWT.,7.5,0.24%,2019-07-29,2021-07-21
+CVE-2019-1020014,N/A,docker-credential-helpers before 0.6.3 has a double free in the List functions.,5.5,0.24%,2019-07-29,2022-10-06
+CVE-2019-1020013,N/A,parse-server before 3.6.0 allows account enumeration.,5.3,0.23%,2019-07-29,2020-08-24
+CVE-2019-1020012,N/A,parse-server before 3.4.1 allows DoS after any POST to a volatile class.,7.5,0.33%,2019-07-29,2019-08-02
+CVE-2019-1020011,N/A,SmokeDetector intentionally does automatic deployments of updated copies of SmokeDetector without server operator authority.,9.0,0.44%,2019-07-29,2022-04-18
+CVE-2019-1020010,N/A,Misskey before 10.102.4 allows hijacking a user's token.,6.1,0.14%,2019-07-29,2019-09-05
+CVE-2019-1020009,N/A,Fleet before 2.1.2 allows exposure of SMTP credentials.,7.5,0.28%,2019-07-29,2020-08-24
+CVE-2019-1020008,N/A,stacktable.js before 1.0.4 allows XSS.,6.1,0.24%,2019-07-29,2019-07-31
+CVE-2019-1020007,N/A,Dependency-Track before 3.5.1 allows XSS.,5.4,0.21%,2019-07-29,2020-02-13
+CVE-2019-1020006,N/A,invenio-app before 1.1.1 allows host header injection.,6.1,0.23%,2019-07-29,2019-08-01
+CVE-2019-1020005,N/A,invenio-communities before 1.0.0a20 allows XSS.,5.4,0.21%,2019-07-29,2019-08-01
+CVE-2019-1020004,N/A,Tridactyl before 1.16.0 allows fake key events.,7.5,0.24%,2019-07-29,2021-07-21
+CVE-2019-1020003,N/A,invenio-records before 1.2.2 allows XSS.,5.4,0.21%,2019-07-29,2019-08-01
+CVE-2019-1020002,N/A,Pterodactyl before 0.7.14 with 2FA allows credential sniffing.,7.5,0.32%,2019-07-29,2020-08-24
+CVE-2019-1020001,N/A,yard before 0.9.20 allows path traversal.,7.5,0.26%,2019-07-29,2024-03-06
+CVE-2019-1010319,N/A,"WavPack 5.1.0 and earlier is affected by: CWE-457: Use of Uninitialized Variable. The impact is: Unexpected control flow, crashes, and segfaults. The component is: ParseWave64HeaderConfig (wave64.c:211). The attack vector is: Maliciously crafted .wav file. The fixed version is: After commit https://github.com/dbry/WavPack/commit/33a0025d1d63ccd05d9dbaa6923d52b1446a62fe.",5.5,0.18%,2019-07-11,2021-02-09
+CVE-2019-1010317,N/A,"WavPack 5.1.0 and earlier is affected by: CWE-457: Use of Uninitialized Variable. The impact is: Unexpected control flow, crashes, and segfaults. The component is: ParseCaffHeaderConfig (caff.c:486). The attack vector is: Maliciously crafted .wav file. The fixed version is: After commit https://github.com/dbry/WavPack/commit/f68a9555b548306c5b1ee45199ccdc4a16a6101b.",5.5,0.18%,2019-07-11,2022-10-06
+CVE-2019-1010316,N/A,pyxtrlock 0.3 and earlier is affected by: Incorrect Access Control. The impact is: False locking impression when run in a non-X11 session. The fixed version is: 0.4.,7.8,0.04%,2019-07-11,2019-07-14
+CVE-2019-1010315,N/A,WavPack 5.1 and earlier is affected by: CWE 369: Divide by Zero. The impact is: Divide by zero can lead to sudden crash of a software/service that tries to parse a .wav file. The component is: ParseDsdiffHeaderConfig (dsdiff.c:282). The attack vector is: Maliciously crafted .wav file. The fixed version is: After commit https://github.com/dbry/WavPack/commit/4c0faba32fddbd0745cbfaf1e1aeb3da5d35b9fc.,5.5,0.49%,2019-07-11,2022-10-07
+CVE-2019-1010314,N/A,"Gitea 1.7.2, 1.7.3 is affected by: Cross Site Scripting (XSS). The impact is: execute JavaScript in victim's browser, when the vulnerable repo page is loaded. The component is: repository's description. The attack vector is: victim must navigate to public and affected repo page.",6.1,0.24%,2019-07-11,2019-07-12
+CVE-2019-1010310,N/A,"GLPI GLPI Product 9.3.1 is affected by: Frame and Form tags Injection allowing admins to phish users by putting code in reminder description. The impact is: Admins can phish any user or group of users for credentials / credit cards. The component is: Tools > Reminder > Description .. Set the description to any iframe/form tags and apply. The attack vector is: The attacker puts a login form, the user fills it and clicks on submit .. the request is sent to the attacker domain saving the data. The fixed version is: 9.4.1.",3.5,0.24%,2019-07-12,2020-08-24

@@ -1,0 +1,26 @@
+CVE ID,CVE Type,Description,Max CVSS,EPSS Score,Published,Updated
+CVE-2016-1000217,N/A,Zotpress plugin for WordPress SQLi in zp_get_account(),9.8,11.40%,2016-10-06,2016-12-22
+CVE-2016-1000216,N/A,Ruckus Wireless H500 web management interface authenticated command injection,9.0,18.64%,2016-10-10,2017-07-07
+CVE-2016-1000215,N/A,Ruckus Wireless H500 web management interface denial of service,7.5,0.42%,2016-10-25,2017-07-07
+CVE-2016-1000214,N/A,Ruckus Wireless H500 web management interface authentication bypass,5.3,0.33%,2016-10-25,2017-07-07
+CVE-2016-1000213,N/A,Ruckus Wireless H500 web management interface CSRF,8.8,0.17%,2016-10-25,2017-07-07
+CVE-2016-1000155,N/A,Reflected XSS in wordpress plugin wpsolr-search-engine v7.6,6.1,0.42%,2016-10-10,2016-12-22
+CVE-2016-1000154,N/A,Reflected XSS in wordpress plugin whizz v1.0.7,6.1,1.59%,2016-10-10,2016-11-28
+CVE-2016-1000153,N/A,Reflected XSS in wordpress plugin tidio-gallery v1.1,6.1,0.42%,2016-10-10,2016-12-22
+CVE-2016-1000152,N/A,Reflected XSS in wordpress plugin tidio-form v1.0,6.1,4.59%,2016-10-10,2016-12-22
+CVE-2016-1000151,N/A,Reflected XSS in wordpress plugin tera-charts v1.0,6.1,0.99%,2016-10-10,2016-12-22
+CVE-2016-1000150,N/A,Reflected XSS in wordpress plugin simplified-content v1.0.0,6.1,0.99%,2016-10-10,2016-12-22
+CVE-2016-1000149,N/A,Reflected XSS in wordpress plugin simpel-reserveren v3.5.2,6.1,0.55%,2016-10-10,2016-11-28
+CVE-2016-1000148,N/A,Reflected XSS in wordpress plugin s3-video v0.983,6.1,1.73%,2016-10-10,2016-11-28
+CVE-2016-1000147,N/A,Reflected XSS in wordpress plugin recipes-writer v1.0.4,6.1,0.99%,2016-10-10,2016-12-22
+CVE-2016-1000146,N/A,Reflected XSS in wordpress plugin pondol-formmail v1.1,6.1,0.46%,2016-10-10,2016-11-28
+CVE-2016-1000145,N/A,Reflected XSS in wordpress plugin pondol-carousel v1.0,6.1,1.34%,2016-10-10,2016-12-22
+CVE-2016-1000144,N/A,Reflected XSS in wordpress plugin photoxhibit v2.1.8,6.1,0.73%,2016-10-10,2016-12-22
+CVE-2016-1000143,N/A,Reflected XSS in wordpress plugin photoxhibit v2.1.8,6.1,1.59%,2016-10-10,2016-11-28
+CVE-2016-1000142,N/A,Reflected XSS in wordpress plugin parsi-font v4.2.5,6.1,1.55%,2016-10-10,2016-12-22
+CVE-2016-1000141,N/A,Reflected XSS in wordpress plugin page-layout-builder v1.9.3,6.1,1.59%,2016-10-10,2016-11-28
+CVE-2016-1000140,N/A,Reflected XSS in wordpress plugin new-year-firework v1.1.9,6.1,1.59%,2016-10-10,2016-11-28
+CVE-2016-1000139,N/A,Reflected XSS in wordpress plugin infusionsoft v1.5.11,6.1,1.07%,2016-10-10,2016-12-22
+CVE-2016-1000138,N/A,Reflected XSS in wordpress plugin indexisto v1.0.5,6.1,1.59%,2016-10-10,2016-11-28
+CVE-2016-1000137,N/A,Reflected XSS in wordpress plugin hero-maps-pro v2.1.0,6.1,1.55%,2016-10-10,2016-12-22
+CVE-2016-1000136,N/A,Reflected XSS in wordpress plugin heat-trackr v1.0,6.1,1.37%,2016-10-10,2022-04-21

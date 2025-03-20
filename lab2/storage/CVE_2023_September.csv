@@ -1,0 +1,54 @@
+CVE ID,CVE Type,Description,Max CVSS,EPSS Score,Published,Updated
+CVE-2023-44488,N/A,"VP9 in libvpx before 1.13.1 mishandles widths, leading to a crash related to encoding.",7.5,3.09%,2023-09-30,2023-11-16
+CVE-2023-44469,N/A,A Server-Side Request Forgery issue in the OpenID Connect Issuer in LemonLDAP::NG before 2.17.1 allows authenticated remote attackers to send GET requests to arbitrary URLs through the request_uri authorization parameter. This is similar to CVE-2020-10770.,4.3,0.17%,2023-09-29,2023-10-08
+CVE-2023-44466,N/A,"An issue was discovered in net/ceph/messenger_v2.c in the Linux kernel before 6.4.5. There is an integer signedness error, leading to a buffer overflow and remote code execution via HELLO or one of the AUTH frames. This occurs because of an untrusted length taken from a TCP packet in ceph_decode_32.",8.8,29.13%,2023-09-29,2024-01-21
+CVE-2023-44464,N/A,pretix before 2023.7.2 allows Pillow to parse EPS files.,7.8,0.09%,2023-09-29,2023-10-12
+CVE-2023-44276,N/A,OPNsense before 23.7.5 allows XSS via the index.php sequence parameter to the Lobby Dashboard.,5.4,0.22%,2023-09-28,2023-10-02
+CVE-2023-44275,N/A,OPNsense before 23.7.5 allows XSS via the index.php column_count parameter to the Lobby Dashboard.,5.4,0.22%,2023-09-28,2023-10-02
+CVE-2023-44273,N/A,Consensys gnark-crypto through 0.11.2 allows Signature Malleability. This occurs because deserialisation of EdDSA and ECDSA signatures does not ensure that the data is in a certain interval.,9.8,0.53%,2023-09-28,2023-10-02
+CVE-2023-44270,N/A,"An issue was discovered in PostCSS before 8.4.31. The vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being included in a comment.",5.3,0.62%,2023-09-29,2023-10-10
+CVE-2023-44216,N/A,"PVRIC (PowerVR Image Compression) on Imagination 2018 and later GPU devices offers software-transparent compression that enables cross-origin pixel-stealing attacks against feTurbulence and feBlend in the SVG Filter specification, aka a GPU.zip issue. For example, attackers can sometimes accurately determine text contained on a web page from one origin if they control a resource from a different origin.",5.3,0.63%,2023-09-27,2023-10-05
+CVE-2023-44207,N/A,"Stored cross-site scripting (XSS) vulnerability in protection plan name. The following products are affected: Acronis Cyber Protect 15 (Linux, Windows) before build 35979.",6.7,0.19%,2023-09-27,2023-09-28
+CVE-2023-44206,N/A,"Sensitive information disclosure and manipulation due to improper authorization. The following products are affected: Acronis Cyber Protect 15 (Linux, Windows) before build 35979.",9.1,0.15%,2023-09-27,2023-09-28
+CVE-2023-44205,N/A,"Sensitive information disclosure due to improper authorization. The following products are affected: Acronis Cyber Protect 15 (Linux, Windows) before build 35979.",5.3,0.13%,2023-09-27,2023-09-28
+CVE-2023-44174,N/A,"Online Movie Ticket Booking System v1.0 is vulnerable to
+
+an authenticated Stored Cross-Site Scripting vulnerability.",6.4,0.16%,2023-09-28,2023-09-29
+CVE-2023-44173,N/A,"Online Movie Ticket Booking System v1.0 is vulnerable to
+
+an authenticated Reflected Cross-Site Scripting vulnerability.",5.4,0.16%,2023-09-28,2023-09-29
+CVE-2023-44172,N/A,SeaCMS V12.9 was discovered to contain an arbitrary file write vulnerability via the component admin_weixin.php.,9.8,0.66%,2023-09-27,2024-09-25
+CVE-2023-44171,N/A,SeaCMS V12.9 was discovered to contain an arbitrary file write vulnerability via the component admin_smtp.php.,9.8,0.66%,2023-09-27,2024-09-25
+CVE-2023-44170,N/A,SeaCMS V12.9 was discovered to contain an arbitrary file write vulnerability via the component admin_ping.php.,9.8,0.66%,2023-09-27,2024-09-25
+CVE-2023-44169,N/A,SeaCMS V12.9 was discovered to contain an arbitrary file write vulnerability via the component admin_notify.php.,9.8,0.66%,2023-09-27,2024-09-25
+CVE-2023-44168,N/A,"The 'phone' parameter of the process_registration.php resource
+
+does not validate the characters received and they
+
+are sent unfiltered to the database.",9.8,0.04%,2023-09-28,2023-09-30
+CVE-2023-44167,N/A,"The 'name' parameter of the process_registration.php resource
+
+does not validate the characters received and they
+
+are sent unfiltered to the database.",9.8,0.04%,2023-09-28,2023-09-30
+CVE-2023-44166,N/A,"The 'age' parameter of the process_registration.php resource
+
+does not validate the characters received and they
+
+are sent unfiltered to the database.",9.8,0.29%,2023-09-28,2023-09-30
+CVE-2023-44165,N/A,"The 'Password' parameter of the process_login.php resource
+
+does not validate the characters received and they
+
+are sent unfiltered to the database.",9.8,0.04%,2023-09-28,2023-09-30
+CVE-2023-44164,N/A,"The 'Email' parameter of the process_login.php resource
+
+does not validate the characters received and they
+
+are sent unfiltered to the database.",9.8,0.29%,2023-09-28,2023-09-30
+CVE-2023-44163,N/A,"The 'search' parameter of the process_search.php resource
+
+does not validate the characters received and they
+
+are sent unfiltered to the database.",9.8,0.29%,2023-09-28,2023-09-30
+CVE-2023-44161,N/A,"Sensitive information manipulation due to cross-site request forgery. The following products are affected: Acronis Cyber Protect 15 (Linux, Windows) before build 35979.",6.5,0.09%,2023-09-27,2023-09-28

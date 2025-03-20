@@ -1,0 +1,26 @@
+CVE ID,CVE Type,Description,Max CVSS,EPSS Score,Published,Updated
+CVE-2020-35931,N/A,"An issue was discovered in Foxit Reader before 10.1.1 (and before 4.1.1 on macOS) and PhantomPDF before 9.7.5 and 10.x before 10.1.1 (and before 4.1.1 on macOS). An attacker can spoof a certified PDF document via an Evil Annotation Attack because the products fail to consider a null value for a Subtype entry of the Annotation dictionary, in an incremental update.",7.8,0.06%,2020-12-31,2021-09-08
+CVE-2020-35930,N/A,"Seo Panel 4.8.0 allows stored XSS by an Authenticated User via the url parameter, as demonstrated by the seo/seopanel/websites.php URI.",5.4,0.22%,2020-12-31,2021-01-05
+CVE-2020-35928,N/A,"An issue was discovered in the concread crate before 0.2.6 for Rust. Attackers can cause an ARCache<K,V> data race by sending types that do not implement Send/Sync.",4.7,0.04%,2020-12-31,2021-01-06
+CVE-2020-35927,N/A,An issue was discovered in the thex crate through 2020-12-08 for Rust. Thex<T> allows cross-thread data races of non-Send types.,5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35926,N/A,An issue was discovered in the nanorand crate before 0.5.1 for Rust. It caused any random number generator (even ChaCha) to return all zeroes because integer truncation was mishandled.,9.8,0.43%,2020-12-31,2021-07-21
+CVE-2020-35925,N/A,An issue was discovered in the magnetic crate before 2.0.1 for Rust. MPMCConsumer and MPMCProducer allow cross-thread sending of a non-Send type.,5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35924,N/A,An issue was discovered in the try-mutex crate before 0.3.0 for Rust. TryMutex<T> allows cross-thread sending of a non-Send type.,5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35923,N/A,An issue was discovered in the ordered-float crate before 1.1.1 and 2.x before 2.0.1 for Rust. A NotNan value can contain a NaN.,5.5,0.14%,2020-12-31,2021-01-06
+CVE-2020-35922,N/A,An issue was discovered in the mio crate before 0.7.6 for Rust. It has false expectations about the std::net::SocketAddr memory representation.,5.5,0.06%,2020-12-31,2021-01-06
+CVE-2020-35921,N/A,An issue was discovered in the miow crate before 0.3.6 for Rust. It has false expectations about the std::net::SocketAddr memory representation.,5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35920,N/A,An issue was discovered in the socket2 crate before 0.3.16 for Rust. It has false expectations about the std::net::SocketAddr memory representation.,5.5,0.14%,2020-12-31,2021-01-06
+CVE-2020-35919,N/A,An issue was discovered in the net2 crate before 0.2.36 for Rust. It has false expectations about the std::net::SocketAddr memory representation.,5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35918,N/A,An issue was discovered in the branca crate before 0.10.0 for Rust. Decoding tokens (with invalid base62 data) can panic.,5.5,0.08%,2020-12-31,2022-09-02
+CVE-2020-35917,N/A,An issue was discovered in the pyo3 crate before 0.12.4 for Rust. There is a reference-counting error and use-after-free in From<Py<T>>.,5.5,0.06%,2020-12-31,2021-01-06
+CVE-2020-35916,N/A,"An issue was discovered in the image crate before 0.23.12 for Rust. A Mutable reference has immutable provenance. (In the case of LLVM, the IR may be always correct.)",5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35915,N/A,An issue was discovered in the futures-intrusive crate before 0.4.0 for Rust. GenericMutexGuard allows cross-thread data races of non-Sync types.,5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35914,N/A,An issue was discovered in the lock_api crate before 0.4.2 for Rust. A data race can occur because of RwLockWriteGuard unsoundness.,4.7,0.04%,2020-12-31,2021-01-05
+CVE-2020-35913,N/A,An issue was discovered in the lock_api crate before 0.4.2 for Rust. A data race can occur because of RwLockReadGuard unsoundness.,4.7,0.04%,2020-12-31,2021-01-05
+CVE-2020-35912,N/A,An issue was discovered in the lock_api crate before 0.4.2 for Rust. A data race can occur because of MappedRwLockWriteGuard unsoundness.,4.7,0.04%,2020-12-31,2021-01-05
+CVE-2020-35911,N/A,An issue was discovered in the lock_api crate before 0.4.2 for Rust. A data race can occur because of MappedRwLockReadGuard unsoundness.,4.7,0.04%,2020-12-31,2021-01-05
+CVE-2020-35910,N/A,An issue was discovered in the lock_api crate before 0.4.2 for Rust. A data race can occur because of MappedMutexGuard unsoundness.,5.5,0.05%,2020-12-31,2021-01-06
+CVE-2020-35909,N/A,An issue was discovered in the multihash crate before 0.11.3 for Rust. The from_slice parsing code can panic via unsanitized data from a network server.,7.8,0.58%,2020-12-31,2021-01-14
+CVE-2020-35908,N/A,An issue was discovered in the futures-util crate before 0.3.2 for Rust. FuturesUnordered can lead to data corruption because Sync is mishandled.,5.5,0.14%,2020-12-31,2021-01-06
+CVE-2020-35907,N/A,An issue was discovered in the futures-task crate before 0.3.5 for Rust. futures_task::noop_waker_ref allows a NULL pointer dereference.,5.5,0.13%,2020-12-31,2021-01-06
+CVE-2020-35906,N/A,An issue was discovered in the futures-task crate before 0.3.6 for Rust. futures_task::waker may cause a use-after-free in a non-static type situation.,7.8,0.14%,2020-12-31,2021-01-06
